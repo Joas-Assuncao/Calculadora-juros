@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Juros Composto | Exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="containerComposto">
+        <header>
+            <h1>Juros Compostos</h1>
+        </header>
+        <section>
+            <main id="inputsComposto">
+                <p>
+                    <label>
+                        <strong>
+                            Aporte mensal: 
+                        </strong>
+                    </label>
+                    <input type="number" name="aporteMensal" id="aporteMensal">
+                </p>
+                <p>
+                    <label>
+                        <strong>
+                            Juros mensais: 
+                        </strong>
+                    </label>
+                    <input type="number" name="jurosMensaisCompostos" id="jurosMensaisCompostos">
+                </p>
+                <p>
+                    <label>
+                        <strong>
+                            Meses investidos: 
+                        </strong>
+                    </label>
+                    <input type="number" name="mesesInvestidos" id="mesesInvestidos">
+                </p>
+                <p><button id="calcularComposto">Calcular</button></p>
+            </main>
+
+            <div id="res">
+                <p id="resultadoComposto">O valor futuro da aplicação será de:___________</p>
+                
+                <h2>Como funciona:</h2>
+                <p>
+                    O valor que você investe, seja mensalmente ou apenas uma vez rende mensalmente um valor X. Até aí tudo bem, juros simples também são assim. O que diferem os dois é que, o valor que é rendido no simples, <strong>sempre</strong> será com base no primeiro valor que foi investido. Já o composto, ele renderá com base no valor presente em sua poupança (ou o investimento que você está utilizando) no momento. Exemplo: 
+                </p> <br>
+                <p>
+                    Joâo investiu R$1000,00 a juros simples. Pedro investiu R$1000,00 a juros compostos, os dois a 1% ao mês. No primeiro mês, o dinheiro de cada um rendeu R$10,00(indo a R$1010,00). No segundo, o de João rendeu mais R$10,00, pois foi o valor inicial investido, logo, até o fim do investimento, continuará rendendo apenas R$10,00 mangos por mês. Já o de Pedro, no segundo mês, rendeu R$10,10, pois no dia que o dinheiro estava previsto para render, tinha R$1010,00 (indo a R$1020,10).
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div id="containerSimples">
+        <h1>Juros Simples</h1>
+        <section>
+            <main id="inputsSimples">
+                <p>
+                    <label>
+                        <strong>
+                            Valor investido: 
+                        </strong>
+                    </label>
+                    <input type="number" name="valorInvestido" id="valorInvestido">
+                </p>
+                <p>
+                    <label>
+                        <strong>
+                            Juros mensais: 
+                        </strong>
+                    </label>
+                    <input type="number" name="jurosMensaisSimples" id="jurosMensaisSimples">
+                </p>
+                <p>
+                    <label>
+                        <strong>
+                            Meses investidos: 
+                        </strong>
+                    </label>
+                    <input type="number" name="tempoInvestimento" id="tempoInvestimento">
+                </p>
+                <p><button id="calcularSimples">Calcular</button></p>
+            </main>
+            <p id="resultadoSimples">O valor futuro da aplicação será de:___________</p>
+        </section>
+        <img src="end_image.svg" alt="Pessoas investindo">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

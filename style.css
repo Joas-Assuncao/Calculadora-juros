@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+:root {
+    --background-blue: #2C4770;
+
+    --dark-blue: #051938;
+    --halfDark-blue: #152D54;
+    --halfClear-blue: #4D548D;
+    --clear-blue: #7689A9;
+}
+
+#containerComposto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+
+    border-bottom: 2px solid #000;
+    background: var(--background-blue);
+}
+
+h1 {
+    padding: 2rem;
+    font-size: 3.125rem;
+    color: var(--dark-blue);
+}
+
+section {
+    padding: 0 5rem;
+}
+
+#inputsComposto, #inputsSimples {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#inputsComposto label, #inputsSimples label {
+    font-size: 1.25rem;
+    color: var(--dark-blue);
+}
+
+#inputsComposto p input, #inputsSimples p input {
+    padding: 5px;
+
+    border-radius: 5px;
+    border: 1px solid var(--dark-blue);
+    
+    background: var(--halfDark-blue);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#calcularComposto, #calcularSimples {
+    padding: 5px 20px;
+
+    border-radius: 5px;
+    border: 1px solid var(--dark-blue);
+    
+    color: #FFF;
+    background: var(--dark-blue);
+
+    box-shadow: 0 0 10px var(--dark-blue);
+    transition: .3s;
+}
+
+#calcularComposto:hover, #calcularSimples:hover {
+    color: var(--dark-blue);
+    background: transparent;
+    
+    box-shadow: none;
+}
+
+#resultadoComposto, #resultadoSimples {
+    padding: 1.5rem 0;
+}
+
+h2 {
+    font-size: 1.875rem;
+    color: var(--dark-blue);
+    padding: 0 0 1.5rem 0;
+}
+
+#res p, #resultadoSimples {
+    font-size: 1.25rem;
+    color: black;
+
+    line-height: 2.5rem;
+    text-indent: 2rem;
+}
+
+
+
+
+
+#containerSimples {
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--background-blue);
+}
+
+#containerSimples section {
+    width: 100%;
+}
+
+img {
+    max-width: 700px;
+    align-self: flex-end;
+    padding: 0 10rem 0 0;
+}
